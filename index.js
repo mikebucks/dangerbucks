@@ -38,11 +38,11 @@ metalsmith(__dirname)
         }
     }))
     .use(markdown())
+    // TODO figure out how to conditionally prefix 'entries' permalinks
     .use(permalinks({
         pattern: ':title'
     }))
     .use(templates('handlebars'))
-
     .use(sass({
         outputDir: 'css/'
     }))

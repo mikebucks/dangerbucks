@@ -1,0 +1,7 @@
+{{> header}}
+
+    <h2>{{this.title}}</h2>
+
+    {{{ contents }}}
+
+{{> footer}}

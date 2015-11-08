@@ -1,1 +1,22 @@
-body { background: purple; color: lime; }
+$gutter-size: 15px;
+
+$brown: #4d2c19;
+$poo: #8c693e;
+$light-grey: #fafafa;
+$orange: #e13c40;
+$green: #7DC67B;
+
+body { margin: 0; padding: 0; font-family: 'Helvetica Neue'; color: #444; }
+
+header { position: fixed; width: 33.333333333333336vw; height: 100vh; margin: 0; background: $light-grey; }
+header h1 { width: 200px; height: 200px; margin: 100px auto; border-radius: 50%; text-indent: -9999px; background: $green; }
+
+a { color: $green; text-decoration: none; }
+ul { list-style: none; margin: 0; padding: 0; }
+
+#projects { margin-left: 33.333333333333336vw; }
+#projects li { float: left; width: 33.333333333333336vw; height: 16.666666666666668vh; }
+#projects li a { display: block; padding: 0 15px; height: 100%; }
+#projects li a h3,
+#projects li a p { margin: 0; padding: 0; }
+#projects li a:hover { background: $orange; }
